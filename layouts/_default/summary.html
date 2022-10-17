@@ -1,0 +1,9 @@
+<a class="post-card" href="{{ .Permalink }}">
+<h4>{{ .Title }}</h4>
+<div>{{ .Summary }}</div>
+<div>
+    <span>{{ .ReadingTime }} Minutes</span>
+    <span>{{ .Date.Format "2006-Jan 02" }}</span>
+    <span>Words: {{ .WordCount }}</span>
+</div>
+</a>

@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <main class="content">
+    <div class="flex-centered">
+      <header>
+        <h1>{{ .Title }}</h1>
+      </header>
+      <p>Hi! I'm a Software Developer with experience in education, living in Tokyo, Japan.</p>
+    <h3>Recent Posts</h3>
+  </div>
+    <div class="post-list">
+      {{ range first 5 .Site.RegularPages }}
+          {{ .Render "summary" }}
+      {{ end }}
+    </div>
+  </main>
+{{ end }}
