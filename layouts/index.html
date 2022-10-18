@@ -1,16 +1,18 @@
 {{ define "main" }}
-  <main class="content">
-    <div class="flex-centered">
-      <header>
-        <h1>{{ .Title }}</h1>
-      </header>
-      <p>Hi! I'm a Software Developer with experience in education, living in Tokyo, Japan.</p>
-    <h3>Recent Posts</h3>
-  </div>
-    <div class="post-list">
-      {{ range first 5 .Site.RegularPages }}
-          {{ .Render "summary" }}
-      {{ end }}
-    </div>
+  <main class="columns has-background-white-ter">
+      <div class="column">
+        <div class="container">
+          <div class="content">
+            <h1 class="title is-1 has-text-centered">{{ .Title }}</h1>
+            <p class="has-text-centered">Hi! I'm a Software Developer with experience in education, living in Tokyo, Japan.</p>
+            <h3 class="subtitle is-3 has-text-centered">Recent Posts</h3>
+            <div class="section">
+              {{ range first 5 .Site.RegularPages }}
+                  {{ .Render "summary" }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
   </main>
 {{ end }}

@@ -1,9 +1,27 @@
-<footer class="footer">
-    <p>
-      Copyright &copy; {{ now.Format "2006" }} {{ $.Site.Author.name }} | All rights reserved.
-    </p>
-    <ul class="socials">
-      <li><a href="https://github.com/happymanju">Github</a></li>
-      <li><a href="https://www.linkedin.com/in/michael-piastucki/">Linkedin</a></li>
-    </ul>
-  </footer>
+<div class="columns has-background-dark">
+  <div class="column">
+    <footer class="footer has-background-dark">
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <p class="has-text-light">Copyright &copy; {{ now.Format "2006" }} {{ $.Site.Author.name }} | All rights reserved.</p>
+          </div>   
+        </div>
+        <div class="level-right">
+          <div class="level-item">
+            <ul class="is-flex is-flex-direction-row is-justify-content-space-around">
+              <li class="p-1"><a class="has-text-light" href="https://github.com/happymanju">Github</a></li>
+              <li class="p-1"><a class="has-text-light" href="https://www.linkedin.com/in/michael-piastucki/">Linkedin</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+
+
+
+  
+  

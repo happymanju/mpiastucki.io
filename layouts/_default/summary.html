@@ -1,9 +1,14 @@
-<a class="post-card" href="{{ .Permalink }}">
-<h4>{{ .Title }}</h4>
-<div>{{ .Summary }}</div>
-<div>
-    <span>{{ .ReadingTime }} Minutes</span>
-    <span>{{ .Date.Format "2006-Jan 02" }}</span>
-    <span>Words: {{ .WordCount }}</span>
+<a class="box" href="{{ .Permalink }}">
+<h4 class="title is-4">{{ .Title }}</h4>
+<div class="content">{{ .Summary }}</div>
+<div class="columns">
+    <div class="column is-one-quarter">
+        <div>
+            <span class="m-1">{{ .ReadingTime }} Minutes</span>
+            <span class="m-1">{{ .Date.Format "2006-Jan 02" }}</span>
+            <span class="m-1">Words: {{ .WordCount }}</span>
+        </div>
+    </div>
 </div>
+
 </a>

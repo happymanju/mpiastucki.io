@@ -1,9 +1,26 @@
-    <div class="hero">
-        <nav class="navbar">
-            <a href="/">{{ $.Site.Title }}</a>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/post">Posts</a></li>
-            </ul>
-        </nav>
-    </div>
+<div class="columns has-background-dark">
+    <nav class="column">
+        <div class="hero">
+            <div class="hero-body">
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <a class="has-text-light" href="/"><h3 class=" title is-5 has-text-light">{{ $.Site.Title }}</h3></a>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <ul class="is-flex is-flex-direction-row is-justify-content-space-around">
+                            <li class="p-1"><a class="has-text-light" href="/">Home</a></li>
+                            <li class="p-1"><a class="has-text-light" href="/post">Posts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+        
