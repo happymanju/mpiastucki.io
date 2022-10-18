@@ -1,12 +1,18 @@
 {{ define "main" }}
-<main>
-  <header>
-    <h1>{{ .Title }}</h1>
-  </header>
-  <div>
-    {{ range .Pages }}
-      {{ .Render "summary" }}
-    {{ end }}
+<main class="columns has-background-white-ter">
+  <div class="column">
+    <div class="section">
+      <div class="container">
+        <header>
+          <h1 class="title is-1 has-text-centered">{{ .Title }}</h1>
+        </header>
+        <div class="section">
+          {{ range .Pages }}
+            {{ .Render "summary" }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
   </div>
 </main>
 {{ end }}
