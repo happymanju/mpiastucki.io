@@ -2,8 +2,13 @@
 <div class="columns">
   <div class="column">
     <section class="section">
-      <div class="container">
+      <div class="container mb-6">
         <h1 class="title is-1 has-text-centered">{{ .Title }}</h1>
+        <h3 class="subtitle">
+          <span class="tag is-link">{{ .ReadingTime }} Minutes</span>
+          <span class="tag is-dark">{{ .Date.Format "Jan 2, 2006" }}</span>
+          <span class="tag is-warning">{{ .WordCount }} Words</span>
+        </h3>
         <div>
           <article class="content">
             {{ .Content }}
@@ -11,11 +16,6 @@
         </div>
       </div>
     </section>
-    <aside class="section">
-        <section class="container">
-          <h4 class="title is-4">{{ .Date.Format "Jan 2, 2006" }}</h4>
-          <h5 class="title is-5">{{ .WordCount }} Words</h5>
-        </section>
       <div class="section">
         <div class="container">
           <div class="level">
@@ -36,7 +36,6 @@
           </div>
         </div>
       </div>
-    </aside>
   </div>
 </div>
 {{ end }}
