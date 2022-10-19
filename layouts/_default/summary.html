@@ -1,14 +1,13 @@
 <a class="box" href="{{ .Permalink }}">
 <h4 class="title is-4">{{ .Title }}</h4>
-<div class="content">{{ .Summary }}</div>
+<h6 class="subtitle has-text-grey is-6">{{ .Summary }}</h6>
 <div class="columns">
     <div class="column is-one-quarter">
         <div>
-            <span class="m-1">{{ .ReadingTime }} Minutes</span>
-            <span class="m-1">{{ .Date.Format "2006-Jan 02" }}</span>
-            <span class="m-1">Words: {{ .WordCount }}</span>
+            <span class="tag is-link">{{ .ReadingTime }} Minutes</span>
+            <span class="tag is-dark">{{ .Date.Format "2006-Jan 02" }}</span>
+            <span class="tag is-warning">Words: {{ .WordCount }}</span>
         </div>
     </div>
 </div>
-
 </a>
